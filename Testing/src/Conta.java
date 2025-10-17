@@ -36,4 +36,13 @@ public class Conta {
 	public void deposito(double depo) {
 		valor += depo;
 	}
+	
+	public String toString() {
+		return "Dados da conta\nConta:"
+				+ numeroConta
+				+ ", Titular: "
+				+ titular
+				+ ", valor: "
+				+ valor;			
+	}
 }

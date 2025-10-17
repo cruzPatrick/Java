@@ -25,17 +25,17 @@ public class Main {
 		}
 		else
 			conta = new Conta(numeroConta, titular);
-		System.out.println("Dados da conta:\nConta " + conta.getNumeroConta() + ", Titular: " + conta.getTitular() + ", Balanço: " + conta.getValor());
+		System.out.println(conta);
 		
 		System.out.println("Insira o valor do deposito: ");
 		double val = sc.nextDouble();
 		conta.deposito(val);
-		System.out.println("Dados da conta:\nConta: " + conta.getNumeroConta() + ", Titular: " + conta.getTitular() + ", Balanço: " + conta.getValor());
+		System.out.println(conta);
 		
 		System.out.println("Insira o valor do saque: ");
 		val = sc.nextDouble();
 		conta.saque(val);
-		System.out.println("Dados da conta:\nConta: " + conta.getNumeroConta() + ", Titular: " + conta.getTitular() + ", Balanço: " + conta.getValor());
+		System.out.println(conta);
 		
 		sc.close();
 	}
