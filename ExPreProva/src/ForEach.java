@@ -2,8 +2,14 @@
 public class ForEach {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		String[] vector = new String[] {"Maria", "João"};
+		
+		for(int i = 0; i < vector.length;i++) {
+			System.out.println(vector[i]);
+		}
+		for(String obj: vector) {
+			System.out.println(obj);
+		}
 	}
 
 }
