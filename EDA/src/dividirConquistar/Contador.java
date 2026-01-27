@@ -17,11 +17,15 @@ public class Contador {
 		
 		int primeiro = num.get(0);
 		
-		System.out.println(num.size());
+		System.out.println(contar(num, num.size()));
 
 	}
-	public static int contar(List<Integer> lista) {
-		if()
+	public static int contar(List<Integer> lista, int indice) {
+		if(indice == 0) //lista.isEmpty()
+			return 0;
+		else {
+			return 1 + contar(lista, indice-1); // return 1 + contar (lista.subList(1, lista.size()));
+		}
 	}
 
 }
