@@ -11,7 +11,17 @@ public class TesteBanco {
 		System.out.println(c.getTitular());
 		System.out.println(c.getTitular().getCpf());
 		System.out.println(c.getTitular().getNome());
-
+		
+		System.out.println("--------------------------");
+		Cliente c4 = new ClientePF("12312312312", "Arthur");
+		Conta c1 = new Conta(444, c4);
+		
+		System.out.println(c1.getNumero());
+		System.out.println(c1.getSaldo());
+		System.out.println(c1.getTitular());
+		System.out.println(c1.getTitular().getCpf());
+		System.out.println(c1.getTitular().getNome());
+		
 	}
 
 }
