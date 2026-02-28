@@ -9,7 +9,7 @@ public class Vendedor extends Funcionario{
 	}
 	
 	public Vendedor(String nome, Double salarioBase) {
-		this(nome, salarioBase, null);
+		this(nome, salarioBase, 0.0);
 	}
 	public Double getComissao() {
 		return comissao;

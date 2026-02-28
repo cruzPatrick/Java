@@ -20,30 +20,24 @@ public class MainFGV2 {
 				op = sc.nextInt();
 			}
 			sc.nextLine();
-			if(op == 0) {
-				System.out.printf("Escreva seu nome:");
-				String nome = sc.nextLine();
-				System.out.printf("Escreva seu salario: ");
-				double sal = sc.nextDouble();
-				while(sal <= 0) {
-					System.out.printf("Salario invalido, escreva um novo valor: ");
-					sal = sc.nextDouble();
-				}
-				sc.nextLine();
-				f[i] = new Gerente(nome,sal);
+			System.out.printf("Escreva seu nome:");
+			String nome = sc.nextLine();
+			System.out.printf("Escreva seu salario: ");
+			double sal = sc.nextDouble();
+			while(sal <= 0) {
+				System.out.printf("Salario invalido, escreva um novo valor: ");
+				sal = sc.nextDouble();
 			}
+			sc.nextLine();
+			if(op == 0) 
+				f[i] = new Gerente(nome,sal);
 			else {
-				System.out.printf("Escreva seu nome:");
-				String nome = sc.nextLine();
-				System.out.printf("Escreva seu salario: ");
-				double sal = sc.nextDouble();
-				while(sal <= 0) {
-					System.out.printf("Salario invalido, escreva um novo valor: ");
-					sal = sc.nextDouble();
-				}
-				sc.nextLine();
 				System.out.printf("Escreva sua comissao: ");
 				double comi = sc.nextDouble();
+				while(comi < 0) {
+					System.out.println("Escreva um valor válido");
+					comi = sc.nextDouble();
+				}
 				sc.nextLine();
 				f[i] = new Vendedor(nome,sal,comi);
 			}
